@@ -1,0 +1,92 @@
+/*====== FOOTER SECTION CSS STARTS ======*/
+
+footer {
+    background-image: url(../../images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0 20px;
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background-color: #000;
+        opacity: 0.74;
+        z-index: -1;
+    }
+    .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 23px;
+
+    }
+    p,
+    li,
+    a {
+        color: #acacac;
+    }
+    .quick-links {
+        li {
+            position: relative;
+            a {
+                text-transform: uppercase;
+                line-height: 34px;
+                padding-left: 25px;
+            }
+            &::before {
+                content: "\f105";
+                position: absolute;
+                font-family: fontawesome;
+                font-size: 30px;
+                line-height: 34px;
+            }
+
+        }
+    }
+    .discover li {
+        &::before {
+            display: none;
+        }
+        a {
+            padding-left: 0;
+        }
+    }
+    .contact {
+        li {
+            line-height: 34px;
+            .fa {
+                font-size: 20px;
+                color: #fff;
+                padding-right: 10px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .social-links {
+        text-align: center;
+        margin-top: 40px;
+        .fa {
+            font-size: 26px;
+            color: #000;
+            background: #fff;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            &:hover {
+                color: #fff;
+                background-color: $green;
+            }
+        }
+    }
+}
+
+/*====== FOOTER SECTION CSS ENDS ======*/

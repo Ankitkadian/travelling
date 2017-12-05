@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/scss/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Quicksand:300,400,500,700" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/fahad-logo.png"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <div class="nav navbar-nav">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group search_header">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <button type="submit" class="header_search" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#post-trip" class="" class="">
+                            <i class=""><img src="assets/images/plain.png"></i>
+                            <p>Post Trip</p>
+                        </a>
+                                <div id="post-trip" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="post-trip sign-up">
+
+                                                    <div class="title2">
+                                                        <img src="assets/images/post-trip.png" alt="">
+                                                        <p class="add-trip signup">
+                                                            Add Trip
+                                                        </p>
+                                                        <p class="login">With a trip added, you can make multiple offers and make more money.
+                                                        </p>
+                                                        <form action="">
+                                                            <div class="form-group">
+                                                                <label for="place">Travelling From</label>
+                                                                <input type="text" class="form-control" id="tfrom" placeholder="Country">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="place">Travelling To</label>
+                                                                <input type="text" class="form-control" id="travel" placeholder="Country">
+                                                            </div>
+
+                                                            <div class="form-group bootstrap-iso">
+                                                                <label for="place">Travel Date</label>
+                                                                <div class="input-group">
+                                                                    <input class="form-control" id="date" name="date" placeholder="dd/mm/yyyy" type="text" />
+                                                                    <span class="input-group-addon">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="toggle-switch">
+                                                                <p>Get notified about new orders</p>
+                                                                <label class="switch">
+                                                                  <input type="checkbox" checked>
+                                                                  <span class="slider round"></span>
+                                                            </label>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button type="submit" class="btn btn-success">Add</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="create-order.html" data-toggle="search" class="">
+                            <i class=""><img src="assets/images/purse.png"></i>
+                            <p>Create Order</p>
+                        </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="search" class="">
+                            <i class=""><img src="assets/images/notification.png"></i>
+                            <p>Notifications</p>
+                        </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="search" class="">
+                            <i class=""><img src="assets/images/comment.png"></i>
+                            <p>Messages</p>
+                        </a>
+                            </li>
+                            <li>
+                                <a href="invite.html" class="">
+                            <i class=""><img src="assets/images/gift.png"></i>
+                            <p>Invite Friends</p>
+                        </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#signup" class="">
+                                    <p>Login Or Register</p>
+                                </a>
+                                <div id="signup" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="sign-up">
+                                                    <div class="image-upload">
+                                                        <label for="file-input">
+                                                                <img src="assets/images/avatar.png" style="pointer-events: none"/>
+                                                            </label>
+                                                        <input id="file-input" type="file" />
+
+                                                    </div>
+                                                    <div class="title2">
+                                                        <p class="signup">
+                                                            Sign Up
+                                                        </p>
+                                                        <p class="login">Existing user? <a href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">Log in here.</a>
+                                                        </p>
+                                                        <form action="">
+                                                            <div class="form-group">
+                                                                <label for="email">Email</label>
+                                                                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="pwd">Password</label>
+                                                                <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="confirm">Confirm Password</label>
+                                                                <input type="password" class="form-control" id="confirm" placeholder="Confirm Your Password">
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button type="submit" class="btn btn-success">Sign Up With Email</button>
+                                                                <p class="or">OR</p>
+                                                                <button type="submit" class="btn btn-primary">Sign Up With Facebook</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <p class="terms">By signing up, you agree to Lay Aoo. <a href="#">Terms and Conditions,</a> and <a href="#">Privacy Policy.</a></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="login" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="log-in sign-up">
+                                                    <div class="image-upload">
+                                                        <label for="file-input">
+                                                                <img src="assets/images/avatar.png" style="pointer-events: none"/>
+                                                            </label>
+                                                        <input id="file-input" type="file" />
+                                                    </div>
+                                                    <div class="title">
+                                                        <p class="signup">
+                                                            Log In
+                                                        </p>
+                                                        <p class="login">Existing user? <a href="#">Sign Up an account</a></p>
+                                                    </div>
+                                                    <form action="">
+                                                        <div class="form-group">
+                                                            <label for="email">Email</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="pwd">Password</label>
+                                                            <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password">
+                                                        </div>
+
+                                                        <div class="buttons">
+                                                            <button type="submit" class="btn btn-success">Sign Up With Email</button>
+                                                            <p class="or">OR</p>
+                                                            <button type="submit" class="btn btn-primary">Sign Up With Facebook</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <p class="terms">By signing up, you agree to Lay Aoo. <a href="#">Terms and Conditions,</a> and <a href="#">Privacy Policy.</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <!--header-->
+
+    </header>
+
+
+    <section class="jumbotron slider_main">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="type">
+                        <h1>What would you like to<br>shop for today?<br>Brand Ba</h1>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="map">
+                        <img src="assets/images/slider_map.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="two_box">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="box1">
+                        <h2>Requester</h2>
+                        <p>You want to acquire,<br />get or send something</p>
+                        <button type="button" class="btn btn-default navbar-btn">post your request</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="box2">
+                        <h2>Traveller<span>Post Trip</span></h2>
+                        <form action="">
+                            <label for="">Country to shop in</label>
+                            <input type="text" placeholder="Choose Country">
+                            <label for="">Return date to Singapore</label>
+                            <input type="text" placeholder="YYYY-MM-DD" id="datetimepicker2">
+                        </form>
+                        <button type="button" class="btn btn-default navbar-btn">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Recently added starts-->
+
+    <section class="recently-added">
+        <div class="container">
+            <h1 class="heading">Recently Added</h1>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="pic">
+                            <p class="title">Flying Machine</p>
+                            <p class="price">$120</p>
+                            <img class="card-img-top" src="assets/images/recently1.jpg">
+                        </div>
+                        <ul class="card-block list-unstyled">
+                            <li>Rio</li>
+                            <li>United States of America</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="pic">
+                            <p class="title">Pepe Jeans</p>
+                            <p class="price">$110</p>
+                            <img class="card-img-top" src="assets/images/recently2.jpg">
+                        </div>
+                        <ul class="card-block list-unstyled">
+                            <li>Hong Kong</li>
+                            <li>United States of America</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="pic">
+                            <p class="title">IPhone X</p>
+                            <p class="price">$999</p>
+                            <img class="card-img-top" src="assets/images/recently3.jpg">
+                        </div>
+                        <ul class="card-block list-unstyled">
+                            <li>Canada</li>
+                            <li>United States of America</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="pic">
+                            <p class="title">Nike Shoes</p>
+                            <p class="price">$170</p>
+                            <img class="card-img-top" src="assets/images/recently4.jpg">
+                        </div>
+                        <ul class="card-block list-unstyled">
+                            <li>France</li>
+                            <li>United States of America</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Recently added ends-->
+
+    <!--Travel Plans CSS Starts-->
+    <section class="travel-plans">
+        <div class="container">
+            <h1 class="heading">
+                Upcoming travel plans
+            </h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="user-img">
+                            <img src="assets/images/user1.jpg" alt="">
+                        </span>
+                    <span class="content">
+                            <p class="title">
+                                <span>Sunny</span> is travelling
+                    </p>
+                    <ul class="list-unstyled travel">
+                        <li>Canada</li>
+                        <li>United States of America</li>
+                    </ul>
+                    <p class="date">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> on Dec 25th 2017
+                    </p>
+                    </span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="user-img">
+                            <img src="assets/images/user2.jpg" alt="">
+                        </span>
+                    <span class="content">
+                            <p class="title">
+                                <span>Sunil</span> is travelling
+                    </p>
+                    <ul class="list-unstyled travel">
+                        <li>Rio</li>
+                        <li>United States of America</li>
+                    </ul>
+                    <p class="date">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> on Dec 25th 2017
+                    </p>
+                    </span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="user-img">
+                            <img src="assets/images/user3.jpg" alt="">
+                        </span>
+                    <span class="content">
+                            <p class="title">
+                                <span>Eminem</span> is travelling
+                    </p>
+                    <ul class="list-unstyled travel">
+                        <li>Canada</li>
+                        <li>United States of America</li>
+                    </ul>
+                    <p class="date">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> on Dec 25th 2017
+                    </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Travel Plans CSS Ends-->
+
+    <!--Plans Starts-->
+
+    <section class="plans">
+        <div class="container">
+            <h1 class="heading">
+                How Lorem Ipsum Works ?
+            </h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing
+            </p>
+            <div class="col-sm-3 steps-inner">
+                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                <p class="title">1 Step</p>
+                <p>Create your offer and travellers will make offer to deliver it.</p>
+            </div>
+            <div class="col-sm-3 steps-inner">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <p class="title">2 Step</p>
+                <p>Create your offer and travellers will make offer to deliver it.</p>
+            </div>
+            <div class="col-sm-3 steps-inner">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <p class="title">3 Step</p>
+                <p>Create your offer and travellers will make offer to deliver it.</p>
+            </div>
+            <div class="col-sm-3 steps-inner">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <p class="title">4 Step</p>
+                <p>Create your offer and travellers will make offer to deliver it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Plans Ends-->
+
+    <!--Review section starts-->
+
+    <section class="review">
+        <div class="container">
+            <h1 class="heading">
+                Recent User Reviews
+            </h1>
+            <div class="owl-carousel">
+                <div class="item">
+                    <p class="title">Travellers</p>
+                    <div class="wrapper">
+                        <div class="travellers">
+                            <ul class="list-inline">
+                                <li>
+                                    <img src="assets/images/user1.jpg" alt="">
+                                    <span class="name">Mellowvin</span>
+                                    <span class="place">Travelled to Japan</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/user2.jpg" alt="">
+                                    <span class="name">James</span>
+                                    <span class="place">Shopped from Singapore</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <span class="image">
+                            <img src="assets/images/rating1.jpg" alt="">
+                        </span>
+                            <span class="content">
+                            <p class="title">
+                                Clear communication. Always keep me posted. Friendly.
+                            </p>
+                            <span class="rating-stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">Requester</p>
+                    <div class="wrapper">
+                        <div class="travellers">
+                            <ul class="list-inline">
+                                <li>
+                                    <img src="assets/images/user2.jpg" alt="">
+                                    <span class="name">Mellowvin</span>
+                                    <span class="place">Travelled to Japan</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/user1.jpg" alt="">
+                                    <span class="name">James</span>
+                                    <span class="place">Shopped from Singapore</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <span class="image">
+                            <img src="assets/images/rating2.jpg" alt="">
+                        </span>
+                            <span class="content">
+                                <p class="title">
+                                    Clear communication. Always keep me posted. Friendly.
+                                </p>
+                                <span class="rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">Requester</p>
+                    <div class="wrapper">
+                        <div class="travellers">
+                            <ul class="list-inline">
+                                <li>
+                                    <img src="assets/images/user2.jpg" alt="">
+                                    <span class="name">Mellowvin</span>
+                                    <span class="place">Travelled to Japan</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/user1.jpg" alt="">
+                                    <span class="name">James</span>
+                                    <span class="place">Shopped from Singapore</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <span class="image">
+                            <img src="assets/images/rating2.jpg" alt="">
+                        </span>
+                            <span class="content">
+                            <p class="title">
+                                Clear communication. Always keep me posted. Friendly.
+                            </p>
+                            <span class="rating-stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Review section ends-->
+
+    <!--Footer starts-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="about-us">
+                        <p class="title">About Us</p>
+                        <p class="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="quick-links">
+                        <p class="title">Quick links</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="discover quick-links">
+                        <p class="title">Discover</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Lorem ipsum simple</a></li>
+                            <li><a href="#">Lorem ipsum simple</a></li>
+                            <li><a href="#">Lorem ipsum simple</a></li>
+                            <li><a href="#">Lorem ipsum simple</a></li>
+                            <li><a href="#">Lorem ipsum simple</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="contact">
+                        <p class="title">Contact us</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 45 Queen’s Park Rd, Brighton, UK</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> (094) 123 4567- (094) 123 4567</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> info@domainname.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+</a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+
+</a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+
+</a></li>
+                    <li><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+
+</a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+
+</a></li>
+                </ul>
+                <ul class="list-inline">
+                    <li>© 2017 Lay Aoo Project</li>
+                    <li><a href="#">| Terms</a></li>
+                    <li><a href="#">| Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var date_input = $('input[name="date"]'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

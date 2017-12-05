@@ -1,0 +1,241 @@
+/*****************Conversation*******************/
+
+.conversation {
+    padding-top: 70px;
+}
+
+.conversation .heading {
+    margin-bottom: 50px;
+}
+
+.conversation .col-sm-8.order-inner {
+    height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.conversation .order-inner {
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 13px #eee;
+    padding: 50px 35px;
+    margin: 70px auto;
+    border-radius: 4px;
+    .product-name {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .offer-details {
+        display: inline-block;
+        background-color: #f4f4f4;
+        padding: 15px 25px;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        border-radius: 5px;
+        p span {
+            font-weight: 500;
+            padding-left: 20px;
+            width: 64%;
+            float: right;
+        }
+        .price {
+            float: right;
+            width: auto;
+        }
+        .show-details {
+            color: #3c99ec;
+            position: relative;
+            font-size: 12px;
+            &::after {
+                position: absolute;
+                right: -7px;
+                width: 20px;
+                height: 100%;
+                font-family: fontawesome;
+                content: "\f107";
+                font-size: 16px;
+                top: -5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.chat_box {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+
+.left_chat {
+    width: auto;
+    float: left;
+    max-width: 96%;
+    background: #efc0d1;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.left_chat p,
+.right_chat p {
+    font-size: 18px;
+    color: #484848;
+}
+
+.conversation {
+    width: 100%;
+    float: left;
+    font-family: "Quicksand", sans-serif;
+}
+
+.left_chat span {
+    width: 100%;
+    float: left;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.right_chat {
+    width: auto;
+    max-width: 82%;
+    float: right;
+    background: #faf8c6;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.conversation_box {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #14c542;
+}
+
+.right_chat span {
+    width: 100%;
+    float: right;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+}
+
+footer {
+    width: 100%;
+    float: left;
+}
+
+.main {
+    width: 100%;
+    float: left;
+}
+
+.main h2 {
+    width: 100%;
+    float: left;
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+}
+
+.main2 {
+    width: 100%;
+    float: left;
+}
+
+.main2 h2 {
+    width: 100%;
+    float: left;
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    text-align: right;
+}
+
+.send_box {
+    width: 100%;
+    float: left;
+    height: 35px;
+    padding-right: 60px;
+    position: relative;
+}
+
+.send_box input {
+    width: 100%;
+    float: left;
+    border: none;
+    font-size: 18px;
+    height: 35px;
+}
+
+.send_box button {
+    width: auto;
+    position: absolute;
+    right: 0;
+    background: #00c032;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 18px;
+    top: -6px;
+    z-index: 999;
+}
+
+.left_chat strong {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 18px solid #efc0d1;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    left: -18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.right_chat strong {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 18px solid #faf8c6;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*small notification icon*/
+
+.header .nav > li {
+    position: relative;
+}
+
+.blink-notif {
+    position: absolute;
+    right: -30px;
+    top: 24%;
+    color: #fff;
+    background-color: $green;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    left: 0;
+    margin: auto;
+}
+
+/*small notif css ends*/

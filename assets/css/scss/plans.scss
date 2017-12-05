@@ -1,0 +1,78 @@
+/*====== PLAN SECTION CSS STARTS ======*/
+
+.plans {
+    background-image: url(../../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    h1 {
+        color: #fff;
+        margin-bottom: 60px;
+        &::after {
+            background-color: #fff;
+        }
+    }
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-style: italic;
+    }
+    .steps-inner {
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../../images/plane.png");
+            height: 60px;
+            width: 60px;
+            background-repeat: no-repeat;
+            top: 13%;
+            left: 90%;
+            background-size: 60%;
+            background-color: #fff;
+            background-position: center;
+            border-radius: 50%;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            border: 2px dashed #fff;
+            width: 120px;
+            top: 22%;
+            right: -60px;
+        }
+        &:last-child {
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+        .fa {
+            font-size: 70px;
+            color: #fff;
+            border: 3px solid #fff;
+            padding: 25px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            height: 136px;
+            width: 136px;
+            text-align: center;
+            line-height: 85px;
+        }
+        .title {
+            font-style: normal;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        p {
+            font-style: normal;
+        }
+    }
+}
+
+/*====== PLAN SECTION CSS ENDS ======*/

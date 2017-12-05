@@ -1,0 +1,106 @@
+/*====== RECENTLY ADDED SECTION CSS STARTS ======*/
+
+.recently-added {
+    .card {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 8px 5px rgba(152, 150, 151, 0.32);
+    }
+
+    .card-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        padding: 15px;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+    }
+
+    .pic {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0.2;
+        }
+        .title {
+            font-size: 31px;
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            font-weight: 700;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 20%;
+            &::after,
+            &::before {
+                position: absolute;
+                width: 70px;
+                content: "";
+                left: 15px;
+                top: 50px;
+                border: 2px dashed #fff;
+            }
+            &::before {
+                right: 15px;
+                left: auto;
+            }
+        }
+        .price {
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            font-weight: 400;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 40%;
+            font-size: 25px;
+        }
+    }
+    .card-block li {
+        background-image: url(../../images/list-type.png);
+        background-repeat: no-repeat;
+        padding-left: 25px;
+        background-position: 0 5px;
+        &:first-child {
+            position: relative;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            &::after,
+            &::before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 90%;
+                right: 0;
+                border-bottom: 1px dashed $green;
+            }
+            &::before {
+                left: 8px;
+                top: 25px;
+                height: 60%;
+                border-left: 1px dashed $green;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+/*====== RECENTLY ADDED SECTION CSS ENDS ======*/

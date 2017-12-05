@@ -1,0 +1,138 @@
+/*====== LOGIN/SIGNUP CSS STARTS ======*/
+
+header,
+.wrapper {
+    .modal-dialog {
+        max-width: 800px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+    .modal-header {
+        border: none;
+        .close {
+            filter: alpha(opacity=100);
+            opacity: 1;
+            font-size: 40px;
+            font-weight: 400;
+        }
+    }
+    .sign-up {
+        font-family: $QS;
+        .image-upload {
+            position: relative;
+            text-align: center;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 1%;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: 45%;
+                border-bottom: 2px solid $green;
+            }
+            label {
+                border: 2px dashed $green;
+                border-radius: 50%;
+                padding: 25px;
+                position: relative;
+                z-index: 1;
+                background: #fff;
+            }
+            > input {
+                visibility: hidden;
+                width: 0;
+                height: 0
+            }
+        }
+        .title {
+            overflow: hidden;
+            text-align: center;
+            font-family: $QS;
+        }
+        .signup {
+            font-size: 31px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .login {
+            font-size: 18px;
+            margin: 10px 0 40px;
+            text-align: center;
+            a {
+                color: $green;
+            }
+        }
+        .form-group {
+            margin: 0 25px 30px;
+        }
+        .form-control {
+            height: 48px;
+            background-color: #f2f2f2;
+            float: none;
+            padding: 8px 10px;
+            display: block;
+            width: 100% !important;
+            border: 2px solid #2cc54d;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: transparent;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin: 0 30px;
+            .or {
+                font-size: 18px;
+                margin: 20px 0;
+                position: relative;
+                background: #fff;
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 20%;
+                    width: 46%;
+                    left: 0;
+                    right: 0;
+                    border-bottom: 2px dashed $green;
+                    top: 10px;
+                }
+                &::before {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        .btn {
+            border: none;
+            min-width: 238px;
+            height: 48px;
+            font-size: 18px;
+            display: block;
+            margin: auto;
+        }
+        .btn-success {
+            background-color: $green;
+        }
+    }
+    .terms {
+        font-size: 15px;
+        max-width: 410px;
+        font-weight: 500;
+        margin: 20px auto !important;
+        text-align: center;
+        line-height: 26px;
+        color: #484848 !important;
+        a {
+            color: $green;
+        }
+    }
+}
+
+/*====== LOGIN/SIGNUP CSS ENDS ======*/

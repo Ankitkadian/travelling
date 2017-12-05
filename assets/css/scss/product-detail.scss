@@ -1,0 +1,292 @@
+/*====== PRODUCT DETAIL PAGE CSS STARTS ======*/
+
+.product-detail {
+    max-width: 1000px;
+    margin: 70px auto;
+    background-color: #fff;
+    box-shadow: 0 0 13px #eee;
+    padding: 40px 40px;
+    font-family: $QS;
+    overflow: hidden;
+    .input-group {
+        box-shadow: 0 0 7px rgba(0, 0, 0, .35);
+        margin-bottom: 40px;
+    }
+    .btn {
+        min-width: 133px;
+        height: 47px;
+        font-weight: 500;
+    }
+    input {
+        height: 47px;
+        width: 100%;
+        background-color: #fff;
+        color: $light;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .nav-tabs {
+        border: 0;
+        background-color: #ededed;
+        li {
+            border: 0;
+            background-image: url(../../images/tabs-next.png);
+            background-repeat: no-repeat;
+            background-size: 19px;
+            &:first-child {
+                background-image: none;
+            }
+        }
+    }
+    .nav-tabs > li.active > a {
+        border: 0;
+        background: $green;
+        position: relative;
+        color: #fff;
+        &::before {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-top: 23px solid transparent;
+            border-bottom: 23px solid transparent;
+            border-left: 19px solid $green;
+            content: "";
+            right: -19px;
+            top: 0%;
+        }
+        &:focus,
+        &:hover {
+            background-color: $green;
+        }
+    }
+    .nav-tabs > li a {
+        border: 0;
+        color: $light;
+        font-size: 16px;
+        font-family: $QS;
+        font-weight: 500;
+        padding: 12px 17px 12px 26px;
+        &:focus,
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        font-family: $QS;
+        font-weight: 700;
+        color: $dark;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .user {
+        border: 1px solid #eee;
+        padding: 20px 15px;
+        background-color: #fefefe;
+        min-height: 235px;
+    }
+    .user-pic {
+        width: 20%;
+        float: left;
+        position: relative;
+        img {
+            border-radius: 50%;
+            border: 3px solid $green;
+        }
+        #base {
+            height: 20px;
+            width: 30px;
+            position: absolute;
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            padding-top: 2px;
+            top: 60%;
+            bottom: 0;
+            right: -20%;
+            &::before {
+                border-top: 12px solid $green;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                top: 20px;
+            }
+        }
+    }
+    .title {
+        font-family: $QS;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .user-details {
+        width: 74%;
+        float: left;
+        margin-left: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+        .pic {
+            border-top: 1px dashed $green;
+            margin-top: 10px;
+            padding-top: 15px;
+            .fa {
+                color: $green;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            span {
+                font-family: $ROB;
+                font-size: 16px;
+                font-weight: 300;
+                color: $light;
+            }
+        }
+    }
+    .text-danger {
+        font-size: 16px;
+        font-weight: 300;
+        span {
+            color: $green;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+    }
+    #base {
+        background: $green;
+        display: inline-block;
+        height: 12px;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+        width: 16px;
+        margin-right: 10px;
+        &::before {
+            border-top: 5px solid $green;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            content: "";
+            height: 0;
+            left: 0;
+            position: absolute;
+            top: 12px;
+            width: 0;
+        }
+    }
+    .rating {
+        margin-top: 10px;
+        .fa {
+            color: #ebec75;
+            font-size: 24px;
+        }
+    }
+    .about-me {
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    .activity {
+        p {
+            font-size: 20px;
+            font-family: $QS;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .fa {
+            font-size: 50px;
+            color: $green;
+            border: 3px solid $green;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            text-align: center;
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            color: $light;
+            margin-top: 10px;
+        }
+    }
+    .offer {
+        span.title {
+            display: block;
+            overflow: hidden;
+            margin-top: 30px;
+            padding-top: 40px;
+            border-top: 2px dashed $green;
+            h2 {
+                margin-top: 0;
+                width: 70%;
+                float: left;
+            }
+            p {
+                width: 30%;
+                float: left;
+                font-size: 16px;
+                font-family: $ROB;
+                text-align: right;
+                font-weight: 300;
+            }
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        li {
+            width: 50%;
+            float: left;
+            padding: 0 20px;
+            margin-top: 10px;
+            min-height: 150px;
+            p {
+                font-weight: 500;
+            }
+            .title {
+                color: $green;
+                .fa {
+                    font-size: 16px;
+                }
+            }
+            .fa {
+                color: $green;
+                padding-right: 5px;
+                font-size: 18px;
+            }
+            &:first-child {
+                border-right: 1px dashed $green;
+            }
+            &:last-child {
+                p {
+                    font-weight: 400;
+                }
+                .bg {
+                    background-color: #eee;
+                    padding: 10px 15px;
+                }
+                .btn-link {
+                    color: $light;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .first,
+        .second {
+            width: 50%;
+            float: left;
+            .btn {
+                margin: 10px 0;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+/*====== PRODUCT DETAIL PAGE CSS ENDS ======*/

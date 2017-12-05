@@ -1,0 +1,32 @@
+/*====== INVITE FRIENDS CSS STARTS ======*/
+
+.wrapper {
+    #invite-friend {
+        .invite {
+            max-width: 900px;
+            margin: 70px auto;
+            background-color: #fff;
+            box-shadow: 0 0 13px #eee;
+            padding: 50px 0;
+        }
+        .invite-friends span {
+            color: $green;
+        }
+        .input-group-addon {
+            padding: 0;
+            background: transparent;
+            border: 0;
+            margin-left: 20px;
+            padding-left: 10px;
+            a {
+                line-height: 33px;
+            }
+        }
+        form {
+            margin-top: 30px;
+        }
+
+    }
+}
+
+/*====== INVITE FRIENDS CSS ENDS ======*/

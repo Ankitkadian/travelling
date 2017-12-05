@@ -1,0 +1,43 @@
+/*====== SUPPORT PAGE CSS STARTS ======*/
+
+.support {
+    padding: 0;
+    margin-top: 80px;
+    .support-inner {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .form-control {
+        width: 100% !important;
+        margin: 0;
+        background: #fff;
+        height: 45px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        border: 1px solid #dedede;
+    }
+
+    .btn-primary {
+        border-radius: 0px;
+        background: $green;
+        color: #fff;
+        font-size: 15px;
+        padding: 8px 26px;
+        text-transform: uppercase;
+        border: 2px solid $green;
+    }
+
+    .btn-primary:hover {
+        color: $green;
+        background: none;
+        transition: all 0.3s ease;
+    }
+
+    textarea {
+        height: auto !important;
+    }
+}
+
+/*====== SUPPORT PAGE CSS ENDS ======*/

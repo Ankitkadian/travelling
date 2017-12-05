@@ -1,0 +1,78 @@
+/*====== TRAVEL PLAN SECTION CSS STARTS ======*/
+
+.travel-plans {
+    padding: 70px 0;
+    .col-sm-4 {
+        padding: 20px 15px;
+        border: 2px solid #eee;
+        box-shadow: 0 0 3px #ddd;
+        width: 30.77%;
+        margin: 0 15px;
+    }
+    .user-img {
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+        img {
+            border-radius: 50%;
+            border: 3px solid $green;
+        }
+    }
+    .content {
+        font-family: 'Quicksand', sans-serif;
+        width: 75%;
+        float: left;
+        padding-left: 10px;
+        .title {
+            font-size: 25px;
+            color: #484848;
+            span {
+                font-weight: 700;
+                color: $green;
+            }
+        }
+        .travel li {
+            background-image: url(../../images/list-type.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+            background-position: 0 5px;
+            font-size: 18px;
+            &:first-child {
+                position: relative;
+                margin-bottom: 8px;
+                padding-bottom: 8px;
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: 90%;
+                    right: 0;
+                    border-bottom: 1px dashed $green;
+                }
+                &::before {
+                    left: 8px;
+                    top: 25px;
+                    height: 60%;
+                    border-left: 1px dashed $green;
+                    border-bottom: none;
+                }
+            }
+            &:last-child {
+                filter: gray;
+                -webkit-filter: grayscale(100%);
+            }
+        }
+        .date {
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            .fa {
+                font-size: 25px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+/*====== TRAVEL PLAN SECTION CSS ENDS ======*/

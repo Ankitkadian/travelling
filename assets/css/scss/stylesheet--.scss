@@ -1,0 +1,181 @@
+@import 'variables';
+@import 'default';
+@import 'post-trip';
+@import 'create-order';
+@import 'invite';
+@import 'login';
+@import 'two-box';
+@import 'recently-added';
+@import 'travel-plans';
+@import 'plans';
+@import 'review';
+@import 'footer';
+@import 'profile';
+@import 'edit-profile';
+@import 'product-detail';
+@import 'product-listing';
+@import 'order-detail';
+@import 'media-query';
+
+
+/*====== HEADER CSS STARTS ======*/
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: #fff;
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+.search-nav {
+    margin: .70em 1em 0 8em;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
+
+.nav > li {
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+.log-in {
+    padding-top: 18px;
+    padding-bottom: 12px;
+    border-right: 0px !important;
+}
+
+.search-btn {
+    background: #000;
+    color: #fff;
+    padding-top: 6px;
+    border: none;
+    padding-bottom: 8px;
+    margin-left: -5px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.form-control {
+    border: 0px;
+    border-radius: 0px;
+    width: 18em !important;
+    display: inline-block;
+    background-color: #f2f2f2;
+}
+
+.header ul li i img {
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+
+.header .navbar-header img {
+    display: block;
+    margin: auto;
+    width: 48%;
+    padding: 0;
+}
+
+.header .navbar-header {
+    width: 15%;
+}
+
+.header .navbar-brand {
+    padding: 8px 10px;
+    height: 62px;
+}
+
+.header .form-control {
+    height: 33px;
+    background-color: #f2f2f2;
+    float: left;
+    padding: 8px 10px;
+}
+
+.header_search {
+    background-color: #282828;
+    border: none;
+    padding: 6px 15px;
+}
+
+.search_header input {
+    border: none;
+}
+
+.search_header {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.header_search i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .navbar-form {
+    margin: 14px 0;
+}
+
+.header .navbar-nav > li > a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.slider_main.jumbotron {
+    padding-top: 98px;
+    padding-bottom: 98px;
+    color: #484848;
+}
+
+.type,
+.map {
+    width: 100%;
+    float: left;
+}
+
+.slider_main.jumbotron .type h1 {
+    font-weight: 100;
+}
+
+.header ul li p {
+    margin: 0;
+    color: #000;
+}
+
+.header .navbar {
+    margin-bottom: 0;
+}
+
+.header .nav > li {
+    border-left: 1px solid #d8d8d8;
+    border-right: none;
+}
+
+.header .navbar-default .navbar-nav > li:last-child a {
+    padding: 21px 10px;
+}
+
+/*====== HEADER CSS ENDS======*/
+
+/*====== BANNER CSS STARTS======*/
+
+.jumbotron {
+    background: url(../../images/slider.jpg);
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+
+/*====== BANNER CSS ENDS======*/

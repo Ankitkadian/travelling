@@ -1,0 +1,135 @@
+/*====== USER PROFILE PAGE CSS STARTS ======*/
+
+.user-profile {
+    max-width: 1000px;
+    margin: 70px auto;
+    background-color: #fff;
+    box-shadow: 0 0 13px #eee;
+    padding: 40px;
+    .user,
+    .activity {
+        border: 1px solid #eee;
+        padding: 20px 15px;
+        background-color: #fefefe;
+        min-height: 235px;
+    }
+    .user-pic {
+        width: 20%;
+        float: left;
+        position: relative;
+        img {
+            border-radius: 50%;
+            border: 3px solid $green;
+        }
+        #base {
+            height: 20px;
+            width: 30px;
+            position: absolute;
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            padding-top: 2px;
+            top: 60%;
+            bottom: 0;
+            right: -20%;
+            &::before {
+                border-top: 12px solid $green;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                top: 20px;
+            }
+        }
+    }
+    .title {
+        font-family: $QS;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .user-details {
+        width: 74%;
+        float: left;
+        margin-left: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    .text-danger {
+        font-size: 16px;
+        font-weight: 300;
+        span {
+            color: $green;
+            padding-left: 20px;
+        }
+    }
+    .delivery {
+        font-size: 16px;
+        font-weight: 300;
+        color: $green;
+    }
+    #base {
+        background: $green;
+        display: inline-block;
+        height: 12px;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+        width: 16px;
+        margin-right: 10px;
+        &::before {
+            border-top: 5px solid $green;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            content: "";
+            height: 0;
+            left: 0;
+            position: absolute;
+            top: 12px;
+            width: 0;
+        }
+    }
+    .rating {
+        margin-top: 10px;
+        .fa {
+            color: #ebec75;
+            font-size: 24px;
+        }
+    }
+    .about-me {
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    .activity {
+        p {
+            font-size: 20px;
+            font-family: $QS;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .fa {
+            font-size: 50px;
+            color: $green;
+            border: 3px solid $green;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            text-align: center;
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            color: $light;
+            margin-top: 10px;
+        }
+    }
+}
+
+/*====== USER PROFILE PAGE CSS ENDS ======*/

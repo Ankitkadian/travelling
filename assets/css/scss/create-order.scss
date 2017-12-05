@@ -1,0 +1,309 @@
+/*====== CREATE ORDER CSS STARTS ======*/
+
+.create-order {
+    font-family: $QS;
+    .select-input {
+        overflow: hidden;
+        .input.select {
+            width: 16%;
+            float: left;
+        }
+        .input.number {
+            width: 83%;
+            float: left;
+            margin-left: 1%;
+        }
+        label {
+            width: 100%;
+        }
+    }
+    /*Input type=number style*/
+    .quantity {
+        position: relative;
+    }
+    .quantity-nav {
+        height: 48px;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+        bottom: 0;
+        margin: auto;
+    }
+    .quantity-button.quantity-up {
+        position: absolute;
+        height: 50%;
+        top: 0;
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .quantity-button.quantity-down {
+        position: absolute;
+        bottom: -5px;
+        height: 50%;
+        font-size: 35px;
+        line-height: 18px;
+    }
+    .quantity-button {
+        cursor: pointer;
+        width: 20px;
+        text-align: center;
+        color: #777;
+        font-family: "Trebuchet MS",
+        Helvetica,
+        sans-serif !important;
+        line-height: 1.7;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    /*Input type=number style ends*/
+    .order-inner {
+        max-width: 900px;
+        background-color: #fff;
+        box-shadow: 0 0 13px #eee;
+        padding: 50px 35px;
+        margin: 70px auto;
+        h2 {
+            font-size: 31px;
+            font-weight: 500;
+            margin-top: 60px;
+        }
+        .form-group {
+            margin: 0 0 30px;
+        }
+        p {
+            font-size: 18px;
+            margin: 25px 0 40px;
+        }
+        .nav-tabs {
+            background-color: #ededed;
+            li {
+                border: 0;
+                width: 33.33%;
+                text-align: center;
+                padding: 15px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-image: url(../../images/tabs-next.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 27px;
+                    height: 66px;
+                    top: 0;
+                    right: 0;
+                }
+                &:last-child::after {
+                    display: none;
+                }
+                a {
+                    font-size: 18px;
+                    border: 0;
+                    font-family: $ROB;
+                    font-weight: 300;
+                    color: $dark;
+                    .fa {
+                        padding-right: 5px;
+                    }
+                }
+            }
+            li.active a {
+                color: $green;
+                background-color: transparent;
+                font-weight: 500;
+            }
+        }
+        .form-control {
+            height: 48px;
+            background-color: #f2f2f2;
+            float: none;
+            padding: 8px 10px;
+            display: block;
+            width: 100% !important;
+            border: 2px solid #2cc54d;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: transparent;
+        }
+        textarea.form-control {
+            height: auto;
+            color: #999;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .image-upload {
+            position: relative;
+            /*            img {
+                position: absolute;
+                background-image: url(../../images/upload.png);
+                content: "";
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 40% 60%;
+            }
+            #file-input {
+                visibility: hidden;
+                width: 0;
+                height: 0
+            }*/
+            .form-control {
+                text-align: center;
+            }
+            .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .inputfile + label {
+                max-width: 80%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                cursor: pointer;
+                display: inline-block;
+                overflow: hidden;
+                padding: 0.625rem 1.25rem;
+                /* 10px 20px */
+            }
+            .inputfile + label * {
+                /* pointer-events: none; */
+                /* in case of FastClick lib use */
+            }
+
+            .inputfile + label svg {
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                margin-top: -0.25em;
+                /* 4px */
+                margin-right: 0.25em;
+                /* 4px */
+            }
+            label {
+                position: absolute;
+                top: 5px;
+                right: 0;
+                left: 0;
+                margin: auto;
+                text-align: center;
+            }
+
+        }
+        .bootstrap-iso .form-control {
+            border: 0;
+        }
+        .bootstrap-iso .input-group {
+            border: 2px solid #2cc54d;
+        }
+        .bootstrap-iso .input-group .input-group-addon {
+            background: transparent;
+        }
+        .bootstrap-iso .input-group .fa {
+            font-size: 20px;
+        }
+    }
+    #checkout {
+        p span {
+            color: $green;
+        }
+        .deliver {
+            background-color: #ebebeb;
+            padding: 25px 15px;
+            margin-top: 40px;
+            p {
+                margin: 0;
+                color: $light;
+                span {
+                    color: $dark;
+                    padding-left: 5px;
+                }
+            }
+            ol {
+                list-style: none;
+                counter-reset: li;
+                padding: 0;
+                margin-top: 30px;
+                margin-left: 35px;
+            }
+            li {
+                counter-increment: li;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: $dark;
+            }
+            li::before {
+                content: counter(li);
+                color: #fff;
+                display: inline-block;
+                direction: rtl;
+                background-color: #2cc54d;
+                text-align: center;
+                height: 2em;
+                line-height: 2em;
+                border-radius: 50%;
+                font-size: 15px;
+                width: 2em;
+                margin-left: -2.5em;
+                margin-right: 0.5em;
+            }
+        }
+        .deliver.mean {
+            padding: 25px 35px;
+            border-radius: 5px;
+        }
+        .price {
+            border-top: 2px dashed $green;
+            border-bottom: 2px dashed $green;
+            padding: 35px 0 10px;
+
+            p {
+                color: #484848;
+                margin: 0 0 20px;
+                width: 100%;
+                display: inline-block;
+                span {
+                    width: 20%;
+                    display: inline-block;
+                    float: right;
+                    text-align: right;
+                    color: $dark;
+                }
+            }
+            .small {
+                font-size: 15px;
+            }
+            .total {
+                font-size: 22px;
+                color: $dark;
+            }
+        }
+    }
+}
+
+.datepicker {
+    z-index: 999999 !important;
+}
+
+/*====== CREATE ORDER CSS ENDS ======*/

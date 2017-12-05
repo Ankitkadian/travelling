@@ -1,0 +1,91 @@
+/*====== PRODUCT LISTING PAGE CSS STARTS ======*/
+
+#product-listing {
+    .card {
+        font-size: 1em;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        border-radius: .28571429rem;
+        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        padding-bottom: 30px;
+        margin: 10px 0;
+        .product {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            .title {
+                float: left;
+                width: 60%;
+                color: $dark;
+                font-size: 26px;
+            }
+            .btn {
+                min-width: 100px;
+                display: inline-block;
+                height: auto;
+                float: right;
+            }
+        }
+        .details {
+            border-top: 2px dashed $green;
+            padding-top: 15px;
+            margin-top: 15px;
+            .user-image {
+                width: 20%;
+                float: left;
+                margin-right: 10px;
+                img {
+                    border-radius: 50%;
+                    border: 3px solid $green;
+                }
+            }
+            .content {
+                width: 76%;
+                float: left;
+                p {
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                    font-family: $QS;
+                    span {
+                        font-weight: 500;
+                        padding-left: 5px;
+                    }
+                }
+                .text-danger {
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: $ROB;
+                }
+            }
+        }
+    }
+
+    .card-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+    }
+
+    .card-img-top {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .buttons {
+        text-align: center;
+        margin-top: 30px;
+        .btn {
+            display: inline-block;
+            line-height: 34px;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+    }
+}
+
+/*====== PRODUCT LISTING PAGE CSS ENDS ======*/

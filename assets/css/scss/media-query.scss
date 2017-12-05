@@ -1,0 +1,370 @@
+/*====== MEDIA QUERY STARTS ======*/
+
+@media(max-width:1199px) {
+    .travel-plans .col-sm-4 {
+        width: 30%;
+    }
+    .plans .steps-inner::after {
+        left: 86%;
+    }
+    .plans .steps-inner::before {
+        width: 91px;
+        right: -45px;
+    }
+    /*product detail starts*/
+    .product-detail .nav-tabs > li a {
+        padding: 12px 10px 12px 23px;
+    }
+    /*product detail ends*/
+}
+
+@media(max-width:992px) {
+    h1.heading {
+        font-size: 28px;
+    }
+    .create-order .order-inner .nav-tabs li {
+        padding: 3px;
+    }
+    .recently-added .pic .title {
+        font-size: 22px;
+    }
+    .recently-added .pic .title::after,
+    .recently-added .pic .title::before {
+        width: 30px;
+        top: 40px;
+    }
+    .travel-plans .col-sm-4 {
+        width: 46%;
+        margin: 15px;
+    }
+    .plans .steps-inner::after {
+        left: 91%;
+        height: 30px;
+        width: 30px;
+        top: 14.5%;
+    }
+    .plans .steps-inner .fa {
+        font-size: 50px;
+        height: 116px;
+        width: 116px;
+        line-height: 65px;
+    }
+    .plans .steps-inner::before {
+        width: 61px;
+        right: -31px;
+        top: 19%;
+    }
+    /*product detail starts*/
+    .product-detail .nav-tabs > li a {
+        padding: 12px 0px 12px 20px;
+        font-size: 12px;
+    }
+    .product-detail .nav-tabs li {
+        background-size: 17px;
+    }
+    .product-detail .nav-tabs > li.active > a::before {
+        border-top: 21px solid transparent;
+        border-bottom: 21px solid transparent;
+        border-left: 15px solid #2cc54d;
+        right: -15px;
+    }
+    /*product detail ends*/
+    /*conversation page css starts*/
+    .conversation .order-inner {
+        padding: 50px 20px;
+    }
+    .conversation .order-inner .offer-details p span {
+        width: 100%;
+        float: left;
+        padding: 0 0 10px 0;
+    }
+    .conversation .order-inner .offer-details {
+        padding: 15px 10px;
+        overflow: hidden;
+    }
+    .conversation .btn-success {
+        min-width: auto;
+    }
+    /*conversation page css ends*/
+}
+
+@media(max-width:767px) {
+    h1.heading {
+        margin-bottom: 70px;
+    }
+    .box1 {
+        margin-bottom: 20px;
+    }
+    .recently-added .card {
+        width: 44.74%;
+        float: left;
+        margin: 15px;
+    }
+    .recently-added .pic .title::before,
+    .recently-added .pic .title::after {
+        right: 35px;
+        left: auto;
+        top: 53px;
+        width: 60px;
+    }
+    .recently-added .pic .title::before {
+        left: 35px;
+    }
+    .travel-plans {
+        padding: 50px 0;
+    }
+    .travel-plans .col-sm-4 {
+        width: 45%;
+        float: left;
+        min-height: 270px;
+    }
+    .plans {
+        padding: 40px 0;
+    }
+    .plans .steps-inner {
+        width: 50%;
+        float: left;
+        margin-top: 40px;
+    }
+    .plans .steps-inner::before {
+        width: 115px;
+        right: -56px;
+        top: 19%;
+    }
+    .plans .steps-inner::after {
+        left: 91%;
+        height: 50px;
+        width: 50px;
+        top: 11.5%;
+    }
+    .plans .steps-inner:nth-child(2n+2)::before,
+    .plans .steps-inner:nth-child(2n+2)::after {
+        display: none;
+    }
+    .review {
+        padding: 50px 0;
+    }
+    footer .col-sm-3 {
+        width: 50%;
+        float: left;
+        min-height: 220px;
+    }
+    /*conversation page css starts*/
+    .conversation .col-sm-8.order-inner {
+        height: auto;
+        overflow: hidden;
+        margin: 0 15px 50px;
+    }
+    /*conversation page css ends*/
+}
+
+@media(max-width:601px) {
+    h1.heading {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    h1.heading::after,
+    h1.heading::before {
+        top: 50px;
+    }
+    header .sign-up .form-group {
+        display: block;
+        text-align: center;
+    }
+    header #invite-friend .input-group-addon {
+        display: inline-block;
+        width: auto;
+        padding: 0;
+        margin: 15px 0 0 0;
+    }
+    header .sign-up .btn {
+        min-width: 208px;
+    }
+    header .sign-up .signup {
+        font-size: 20px;
+    }
+    .recently-added .card {
+        width: 43.35%;
+    }
+    .recently-added .pic .title::before,
+    .recently-added .pic .title::after {
+        top: 46px;
+        width: 30px;
+    }
+    .travel-plans .col-sm-4 {
+        width: 45.84%;
+        margin: 10px;
+    }
+    .travel-plans {
+        padding: 30px 0;
+    }
+    .travel-plans .content .title {
+        font-size: 22px;
+    }
+    .travel-plans .content .date {
+        font-size: 13px;
+    }
+    .travel-plans .content .date .fa {
+        font-size: 18px;
+    }
+    .review .title {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .review .travellers li .place {
+        font-size: 15px;
+    }
+    .review .rating .content .title {
+        margin-top: 0;
+    }
+    .review .travellers li::before {
+        width: 120px;
+        top: 28%;
+        right: -70px;
+    }
+    .review .travellers li::after {
+        top: 12%;
+        left: 88%;
+    }
+    footer .col-sm-3 {
+        min-height: 260px;
+    }
+    .create-order .order-inner .nav-tabs li::after {
+        background-size: 88%;
+    }
+    .create-order .order-inner .nav-tabs li a {
+        font-size: 15px;
+    }
+    .create-order .order-inner .nav-tabs li a .fa {
+        display: none;
+    }
+}
+
+@media(max-width:480px) {
+    h1.heading {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .box1,
+    .box2 {
+        height: auto;
+    }
+    .box1 h2 {
+        font-size: 26px;
+    }
+    .box1 p {
+        font-size: 18px;
+    }
+    .box2 form input {
+        width: auto;
+    }
+    .recently-added .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .travel-plans .row {
+        margin: 0;
+    }
+    .travel-plans h1.heading::after,
+    .travel-plans h1.heading::before,
+    .plans h1.heading::after,
+    .plans h1.heading::before,
+    .review h1.heading::after,
+    .review h1.heading::before {
+        top: 70px;
+    }
+    .travel-plans .col-sm-4 {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .plans .steps-inner .fa {
+        font-size: 30px;
+        height: 86px;
+        width: 86px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .plans .steps-inner::before {
+        width: 55px;
+        right: -29px;
+        top: 16%;
+    }
+    .plans .steps-inner::after {
+        height: 30px;
+        width: 30px;
+    }
+    .plans .steps-inner .title {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    .plans p {
+        font-size: 14px;
+    }
+    .review .travellers li .place {
+        font-size: 14px;
+    }
+    .review .travellers li .name {
+        font-size: 16px;
+    }
+    .review .travellers li::after {
+        top: 20%;
+        height: 25px;
+        width: 25px;
+    }
+    .review .travellers li::before {
+        width: 84px;
+        border: 1px dotted #000;
+    }
+    .review .rating .content {
+        padding-left: 0px;
+    }
+    .review .rating .content .title {
+        font-size: 18px;
+    }
+    footer .col-sm-3 {
+        width: 100%;
+        min-height: auto;
+    }
+    footer .title {
+        font-size: 18px;
+    }
+    footer .social-links .fa {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .create-order .order-inner .nav-tabs li a .fa {
+        color: #484848;
+        font-size: 24px;
+    }
+    .create-order .order-inner .nav-tabs li.active .fa {
+        color: $green;
+    }
+    .create-order .order-inner .nav-tabs li.active .fa {
+        color: $green;
+    }
+    .create-order .order-inner .nav-tabs li.active a {
+        color: #EDEDED;
+    }
+    .create-order .order-inner .nav-tabs li::after {
+        background-size: 60%;
+        height: 40px;
+        background-position: 10px 0px;
+    }
+    .create-order .order-inner .nav-tabs li {
+        height: 40px;
+        overflow: hidden;
+    }
+    .create-order .order-inner .nav-tabs li a .fa {
+        display: block;
+    }
+    .create-order .order-inner .nav-tabs li a {
+        color: #EDEDED;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+}
+
+/*====== MEDIA QUERY ENDS ======*/

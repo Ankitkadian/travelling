@@ -1,0 +1,56 @@
+/*====== DEFAULT CSS STARTS ======*/
+
+body {
+    background: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+h1.heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 100px;
+    &::after,
+    &::before {
+        background: $green;
+        width: 80px;
+        height: 3px;
+        position: absolute;
+        content: "";
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    &::before {
+        background: #000;
+        width: 225px;
+    }
+}
+
+.btn.btn-success {
+    border: none;
+    min-width: 238px;
+    height: 48px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    background-color: $green;
+    line-height: 34px;
+}
+
+/*====== DEFAULT CSS ENDS ======*/

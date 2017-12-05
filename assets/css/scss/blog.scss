@@ -1,0 +1,135 @@
+/*====== BLOG PAGE CSS STARTS ======*/
+
+.blog-inner {
+    max-width: 900px;
+    margin: auto;
+}
+
+.blog_wrapper {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 50px 0;
+    .post_block {
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0px 0px 4px #ddd;
+    }
+
+    .post_block h2 {
+        font-size: 22px;
+        color: $green;
+        font-weight: 300;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .post_block p {
+        font-size: 15px;
+        color: #6b6b6b;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .post_block a.read_more {
+        font-size: 15px;
+        color: #000;
+        padding: 8px 2px;
+        margin-top: 10px;
+        display: inline-block;
+        border-bottom: 2px solid $green;
+        float: left;
+    }
+
+    .post_block a.read_more:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .post_block img {
+        margin-right: 25px;
+    }
+
+    .post_block img:hover {
+        filter: unset;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .post_block .catageory ul {
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .post_block .catageory ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 2px solid #eee;
+    }
+
+    .post_block .catageory ul a {
+        color: #333;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .post_block .catageory ul li:last-child {
+        border-right: 0px;
+    }
+    .post_block .catageory ul a:hover {
+        color: $green;
+    }
+    .heading-top {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .heading-top h1 {
+        margin-bottom: 20px;
+        letter-spacing: 10px;
+    }
+    .heading-top p {
+        color: #6b6b6b;
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .pagination > li > a,
+    .pagination > li > span {
+        float: none;
+        padding: 10px 15px;
+        color: #000;
+        border: 0;
+        font-size: 14px;
+        background: transparent;
+        margin: 0 2px;
+    }
+
+    .pagination > .active > a,
+    .pagination > .active > a:focus,
+    .pagination > .active > a:hover,
+    .pagination > .active > span,
+    .pagination > .active > span:focus,
+    .pagination > .active > span:hover {
+        background-color: $green;
+        border: 0;
+        border-radius: 50px;
+        color: #fff;
+    }
+
+    .pagination > li > a:focus,
+    .pagination > li > a:hover,
+    .pagination > li > span:focus,
+    .pagination > li > span:hover {
+        color: #000;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.single-blog-content {
+    margin-top: 20px;
+}
+
+/*====== BLOG PAGE CSS ENDS ======*/

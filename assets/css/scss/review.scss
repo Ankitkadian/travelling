@@ -1,0 +1,132 @@
+/*====== REVIEW SECTION CSS STARTS ======*/
+
+.review {
+    padding: 70px 0;
+    .title {
+        font-size: 30px;
+        color: #000;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 26px;
+        margin: 0 10px 20px;
+    }
+    .wrapper {
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0 8px 5px rgba(152, 150, 151, 0.32);
+        font-family: 'Quicksand', sans-serif;
+        overflow: hidden;
+        margin: 0 10px;
+    }
+    .travellers {
+        border-bottom: 2px solid $green;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        li {
+            text-align: center;
+            position: relative;
+            width: 49%;
+            img {
+                border-radius: 50%;
+                border: 3px solid $green;
+                display: block;
+                margin: auto;
+                width: auto;
+            }
+            .name {
+                display: block;
+                text-transform: uppercase;
+                font-size: 21px;
+                color: #000;
+                margin-top: 10px;
+                font-family: roboto;
+                margin-bottom: 5px;
+            }
+            .place {
+                color: $green;
+                font-size: 18px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../../images/plane2.png");
+                height: 50px;
+                width: 50px;
+                background-repeat: no-repeat;
+                top: 16%;
+                left: 92%;
+                background-size: 50%;
+                background-color: #000;
+                background-position: center;
+                border-radius: 50%;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                border: 3px dashed #000;
+                width: 150px;
+                top: 32%;
+                right: -80px;
+            }
+            &:last-child {
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .rating {
+        .image {
+            width: 30%;
+            float: left;
+            border: 3px solid $green;
+        }
+        .content {
+            padding-left: 15px;
+            width: 70%;
+            float: left;
+            .title {
+                font-size: 21px;
+                text-transform: uppercase;
+                color: #484848;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .rating-stars {
+                color: #d8a405;
+                margin-left: 10px;
+                .fa {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            display: none;
+        }
+        .owl-dots {
+            text-align: center;
+            margin-top: 40px;
+            span {
+                background: transparent;
+                border: 2px solid $green;
+                border-radius: 20px;
+                display: inline-block;
+                height: 12px;
+                margin: 5px 7px;
+                opacity: 0.5;
+                width: 12px;
+            }
+        }
+        .owl-dot {
+            display: inline-block;
+        }
+        .owl-dot.active span {
+            background-color: $green;
+            opacity: 1;
+        }
+    }
+}
+
+/*====== REVIEW SECTION CSS ENDS ======*/
