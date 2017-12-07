@@ -24,9 +24,8 @@
         color: $light;
         font-size: 20px;
         font-weight: 500;
-        width: 100% !important;
     }
-    .nav-tabs2 {
+    .nav-tabs {
         border: 0;
         background-color: #ededed;
         li {
@@ -34,14 +33,12 @@
             background-image: url(../../images/tabs-next.png);
             background-repeat: no-repeat;
             background-size: 19px;
-            width: auto;
-            float: left;
             &:first-child {
                 background-image: none;
             }
         }
     }
-    .nav-tabs2 > li.active > a {
+    .nav-tabs > li.active > a {
         border: 0;
         background: $green;
         position: relative;
@@ -62,13 +59,7 @@
             background-color: $green;
         }
     }
-    .nav-tabs2 > li:last-child {
-        width: 15%;
-    }
-    .nav-tabs2 > li:last-child a::before {
-        display: none;
-    }
-    .nav-tabs2 > li a {
+    .nav-tabs > li a {
         border: 0;
         color: $light;
         font-size: 16px;

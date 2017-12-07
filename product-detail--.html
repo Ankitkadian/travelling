@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Support</title>
+    <title>Product Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -228,6 +228,15 @@
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </li>
 
                         </ul>
                     </div>
@@ -236,33 +245,153 @@
                 <!--/.container-fluid -->
             </nav>
         </div>
+        <!--header-->
     </header>
-    <!--header-->
 
-    <section class="support">
+
+    <!--Product detail starts-->
+    <section id="product-detail">
         <div class="container">
-            <div class="support-inner">
-                <h1 class="heading">Support</h1>
-                <form>
-                    <div class="form-group col-md-6 col-sm-6">
-                        <input class="form-control" placeholder="Name*" name="" type="text">
+            <div class="product-detail">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-btn bs-dropdown-to-select-group">
+                            <button type="button" class="btn btn-success dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown">
+                                <span data-bind="bs-drp-sel-label">Request</span>
+                                <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                            <ul class="dropdown-menu" role="menu" style="">
+                                <li data-value="1"><a href="#">One</a></li>
+                                <li data-value="2"><a href="#">Two</a></li>
+                                <li data-value="3"><a href="#">Three</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" value="" class="form-control" name="text" placeholder="Search...">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success">Search</button>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6 col-sm-6">
-                        <input class="form-control" placeholder="Email*" name="" type="text">
+                </div>
+                <h1 class="heading">Product Detail</h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#open">Open</a></li>
+                    <li><a data-toggle="tab" href="#offered">Offered</a></li>
+                    <li><a data-toggle="tab" href="#purchase">Pending Purchase</a></li>
+                    <li><a data-toggle="tab" href="#delivery">Pending Delivery</a></li>
+                    <li><a data-toggle="tab" href="#acknow">Pending Acknowledgement</a></li>
+                    <li><a data-toggle="tab" href="#completed">Completed</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="open" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Requested By</h2>
+                                <div class="user">
+                                    <div class="user-pic">
+                                        <img src="assets/images/user3.jpg" alt="">
+                                    </div>
+                                    <div class="user-details">
+                                        <p class="title">Lorem Ipsum</p>
+                                        <p class="text-danger rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <span>(730 Total Reviews)</span></p>
+                                        <div class="pic">
+                                            <img src="assets/images/user-4.jpg" alt=""><i class="fa fa-tag" aria-hidden="true"></i>
+                                            <span>Willing to pay SGD 30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h2>Traveller</h2>
+                                <div class="user">
+                                    <div class="user-pic">
+                                        <img src="assets/images/user3.jpg" alt="">
+                                        <div id="base">92%</div>
+                                    </div>
+                                    <div class="user-details">
+                                        <p class="title">Lorem Ipsum</p>
+                                        <p class="text-danger"><i class="fa fa-check" aria-hidden="true"></i> Super Traveller <span>(730 Total Reviews)</span></p>
+                                        <p class="rating"><i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </p>
+                                    </div>
+                                    <div class="about-me">
+                                        <p class="title">Traveller offered to help at SGD 38</p>
+                                        <p>Offer expires on 22 Nov 2017, 16:00 pm SGT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <span class="title"><h2>Miniso We Bare Bears Plushie</h2><p>Posted 3 hours ago</p></span>
+                            <p>1 Ice Bear, 1 PanPan & 1 Grizzly from Miniso. Please provide receipt after purchase. </p>
+                            <p>Want to collect items before 22nd December, so please only offer if you can reach back by then.</p>
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="first">
+                                        <p class="title"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Quantity 3</p>
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Shop in China</p>
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Shop in Singapore</p>
+                                    </div>
+                                    <div class="second">
+                                        <a href="" class="btn btn-success">I want this too!
+</a>
+                                        <a href="" class="btn btn-success">Offer to help</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Requester's selected delivery method:</p>
+                                    <p class="bg">Self-Collection at Airport</p>
+                                    <p>Traveller to deposit at Lay Aoo Collection Centre:</p>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-home" aria-hidden="true"></i>
+Address and operating hours 
+  <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">One</a></li>
+                                            <li><a href="#">Two</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="form-group col-md-12 col-sm-12">
-                        <input class="form-control" placeholder="Subject" name="" type="text">
+                    <div id="offered" class="tab-pane fade">
+                        <h3>Menu 1</h3>
                     </div>
-                    <div class="form-group col-md-12 col-sm-12">
-                        <textarea class="form-control" rows="6" placeholder="Message*" name=""></textarea>
+                    <div id="purchase" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                     </div>
-                    <div class="form-group col-md-12 col-sm-12">
-                        <button type="submit" class="btn btn-success">Submit</button>
+                    <div id="delivery" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
-                </form>
+                    <div id="acknow" class="tab-pane fade">
+                        <h3>Menu 4</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <div id="completed" class="tab-pane fade">
+                        <h3>Menu 5</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!--Edit Profile ends-->
+
     <!--Footer starts-->
     <footer>
         <div class="container">
@@ -344,7 +473,6 @@
     <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script>
         $(document).ready(function() {
             var date_input = $('input[name="date"]'); //our date input has the name "date"

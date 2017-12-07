@@ -53,4 +53,41 @@ h1.heading {
     line-height: 34px;
 }
 
+#owlcarousel1.owl-carousel {
+    .owl-dots {
+        margin-top: -50px;
+        position: relative;
+    }
+}
+
+.owl-carousel {
+    img {
+        width: auto !important;
+    }
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
+        text-align: center;
+        margin-top: 40px;
+        span {
+            background: transparent;
+            border: 2px solid $green;
+            border-radius: 20px;
+            display: inline-block;
+            height: 12px;
+            margin: 5px 7px;
+            opacity: 0.5;
+            width: 12px;
+        }
+    }
+    .owl-dot {
+        display: inline-block;
+    }
+    .owl-dot.active span {
+        background-color: $green;
+        opacity: 1;
+    }
+}
+
 /*====== DEFAULT CSS ENDS ======*/

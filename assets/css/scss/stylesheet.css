@@ -44,7 +44,67 @@ h1.heading {
   background-color: #2cc54d;
   line-height: 34px; }
 
+#owlcarousel1.owl-carousel .owl-dots {
+  margin-top: -50px;
+  position: relative; }
+
+.owl-carousel img {
+  width: auto !important; }
+.owl-carousel .owl-nav {
+  display: none; }
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 40px; }
+  .owl-carousel .owl-dots span {
+    background: transparent;
+    border: 2px solid #2cc54d;
+    border-radius: 20px;
+    display: inline-block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px; }
+.owl-carousel .owl-dot {
+  display: inline-block; }
+.owl-carousel .owl-dot.active span {
+  background-color: #2cc54d;
+  opacity: 1; }
+
 /*====== DEFAULT CSS ENDS ======*/
+/*====== BANNER CSS STARTS======*/
+.jumbotron {
+  background: url(../../images/slider.jpg);
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 0px; }
+  .jumbotron .type-wrap {
+    display: inline-block;
+    max-width: 510px;
+    overflow: hidden; }
+  .jumbotron .typed {
+    font-size: 63px;
+    font-weight: 100;
+    line-height: 72px; }
+  .jumbotron .typed-cursor {
+    font-size: 55px;
+    font-weight: 100; }
+
+.slider_main.jumbotron {
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color: #484848;
+  height: 430px; }
+
+.type,
+.map {
+  width: 100%;
+  float: left; }
+
+.jumbotron {
+  padding-top: 8em;
+  padding-bottom: 8em; }
+
+/*====== BANNER CSS ENDS======*/
 /*====== POST TRIP CSS STARTS ======*/
 header .post-trip.sign-up .btn-success {
   min-width: 130px;
@@ -898,25 +958,6 @@ header .terms,
       margin-left: 10px; }
       .review .rating .content .rating-stars .fa {
         font-size: 26px; }
-  .review .owl-carousel .owl-nav {
-    display: none; }
-  .review .owl-carousel .owl-dots {
-    text-align: center;
-    margin-top: 40px; }
-    .review .owl-carousel .owl-dots span {
-      background: transparent;
-      border: 2px solid #2cc54d;
-      border-radius: 20px;
-      display: inline-block;
-      height: 12px;
-      margin: 5px 7px;
-      opacity: 0.5;
-      width: 12px; }
-  .review .owl-carousel .owl-dot {
-    display: inline-block; }
-  .review .owl-carousel .owl-dot.active span {
-    background-color: #2cc54d;
-    opacity: 1; }
 
 /*====== REVIEW SECTION CSS ENDS ======*/
 /*====== FOOTER SECTION CSS STARTS ======*/
@@ -1182,23 +1223,26 @@ footer {
     background-color: #fff;
     color: #484848;
     font-size: 20px;
-    font-weight: 500; }
-  .product-detail .nav-tabs {
+    font-weight: 500;
+    width: 100% !important; }
+  .product-detail .nav-tabs2 {
     border: 0;
     background-color: #ededed; }
-    .product-detail .nav-tabs li {
+    .product-detail .nav-tabs2 li {
       border: 0;
       background-image: url(../../images/tabs-next.png);
       background-repeat: no-repeat;
-      background-size: 19px; }
-      .product-detail .nav-tabs li:first-child {
+      background-size: 19px;
+      width: auto;
+      float: left; }
+      .product-detail .nav-tabs2 li:first-child {
         background-image: none; }
-  .product-detail .nav-tabs > li.active > a {
+  .product-detail .nav-tabs2 > li.active > a {
     border: 0;
     background: #2cc54d;
     position: relative;
     color: #fff; }
-    .product-detail .nav-tabs > li.active > a::before {
+    .product-detail .nav-tabs2 > li.active > a::before {
       position: absolute;
       width: 0px;
       height: 0px;
@@ -1208,16 +1252,20 @@ footer {
       content: "";
       right: -19px;
       top: 0%; }
-    .product-detail .nav-tabs > li.active > a:focus, .product-detail .nav-tabs > li.active > a:hover {
+    .product-detail .nav-tabs2 > li.active > a:focus, .product-detail .nav-tabs2 > li.active > a:hover {
       background-color: #2cc54d; }
-  .product-detail .nav-tabs > li a {
+  .product-detail .nav-tabs2 > li:last-child {
+    width: 15%; }
+  .product-detail .nav-tabs2 > li:last-child a::before {
+    display: none; }
+  .product-detail .nav-tabs2 > li a {
     border: 0;
     color: #484848;
     font-size: 16px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     padding: 12px 17px 12px 26px; }
-    .product-detail .nav-tabs > li a:focus, .product-detail .nav-tabs > li a:hover {
+    .product-detail .nav-tabs2 > li a:focus, .product-detail .nav-tabs2 > li a:hover {
       background-color: transparent; }
   .product-detail h2 {
     font-size: 30px;
@@ -1452,7 +1500,7 @@ footer {
 #product-listing .card-img-top {
   display: block;
   width: 100%;
-  height: auto; }
+  height: 200px; }
 #product-listing .buttons {
   text-align: center;
   margin-top: 30px; }
@@ -1571,14 +1619,14 @@ footer {
   margin-top: 20px; }
 
 /*====== BLOG PAGE CSS ENDS ======*/
-/*====== SUPPORT PAGE CSS STARTS ======*/
-.support {
+/*====== CONTACT PAGE CSS STARTS ======*/
+.contact-page {
   padding: 0;
-  margin-top: 80px; }
-  .support .support-inner {
+  margin: 70px 0 50px; }
+  .contact-page .support-inner {
     max-width: 900px;
     margin: auto; }
-  .support .form-control {
+  .contact-page .form-control {
     width: 100% !important;
     margin: 0;
     background: #fff;
@@ -1587,7 +1635,7 @@ footer {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     border: 1px solid #dedede; }
-  .support .btn-primary {
+  .contact-page .btn-primary {
     border-radius: 0px;
     background: #2cc54d;
     color: #fff;
@@ -1595,14 +1643,14 @@ footer {
     padding: 8px 26px;
     text-transform: uppercase;
     border: 2px solid #2cc54d; }
-  .support .btn-primary:hover {
+  .contact-page .btn-primary:hover {
     color: #2cc54d;
     background: none;
     transition: all 0.3s ease; }
-  .support textarea {
+  .contact-page textarea {
     height: auto !important; }
 
-/*====== SUPPORT PAGE CSS ENDS ======*/
+/*====== CONTACT PAGE CSS ENDS ======*/
 /*****************Conversation*******************/
 .conversation {
   padding-top: 70px; }
@@ -1815,6 +1863,10 @@ footer {
 /*====== FAQ PAGE CSS STARTS ======*/
 .shop-trav {
   padding: 70px 0; }
+  .shop-trav .faq-inner {
+    background-color: #fff;
+    padding: 30px 30px 20px;
+    border: 1px solid #eee; }
   .shop-trav .btn-info {
     height: 50px;
     font-size: 18px;
@@ -1823,7 +1875,7 @@ footer {
     line-height: 37px;
     margin-bottom: 30px; }
   .shop-trav p.heading {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     font-family: "Quicksand", sans-serif;
@@ -1834,6 +1886,8 @@ footer {
     position: relative; }
   .shop-trav p {
     color: #888; }
+    .shop-trav p a {
+      color: #2cc54d; }
   .shop-trav p:last-child {
     margin-bottom: 20px; }
   .shop-trav .ui-icon-circle-arrow-e::after,
@@ -1850,15 +1904,93 @@ footer {
   .shop-trav .ui-icon-circle-arrow-s::after {
     content: "\f107";
     right: 3px; }
+  .shop-trav ul li {
+    line-height: 22px;
+    color: #888;
+    margin-bottom: 5px; }
 
 /*====== FAQ PAGE CSS ENDS ======*/
 /*====== ABOUT PAGE CSS STARTS ======*/
 .about {
   padding: 70px 0; }
+  .about p.heading {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    color: #333;
+    margin: 0 0 10px; }
+  .about p,
+  .about li {
+    color: #888;
+    line-height: 26px;
+    margin-bottom: 0; }
+    .about p a,
+    .about li a {
+      color: #2cc54d; }
+  .about p.text-uppercase {
+    font-size: 16px;
+    color: #2cc54d;
+    margin: 30px 0 0; }
+  .about div div {
+    background-color: #fff;
+    padding: 50px 60px 40px;
+    overflow: hidden;
+    margin: 0px 0 20px;
+    border: 1px solid #dff8e4; }
+  .about b {
+    margin-top: 15px;
+    display: inline-block; }
 
 /*====== ABOUT PAGE CSS ENDS ======*/
 /*====== MEDIA QUERY STARTS ======*/
 @media (max-width: 1199px) {
+  /*navbar css starts*/
+  .header .navbar-header {
+    width: 15%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px; }
+
+  .header .navbar > .container .navbar-brand,
+  .header .navbar > .container-fluid .navbar-brand {
+    margin-left: 0; }
+
+  .header .navbar-header img {
+    width: 100px !important; }
+
+  .header .navbar-form {
+    padding: 0; }
+
+  .header .navbar-brand {
+    padding: 5px 0 0 !important;
+    float: none; }
+
+  .header .nav.navbar-nav {
+    width: 22%;
+    text-align: center;
+    margin: auto; }
+
+  .header .form-control {
+    width: 157px !important; }
+
+  .header .navbar-left {
+    float: none !important; }
+
+  .header .navbar-nav > li {
+    float: none;
+    display: inline-block;
+    vertical-align: bottom; }
+
+  .header .nav > li > a {
+    padding: 5px 8px; }
+
+  .header .navbar-default .navbar-nav > li:last-child a {
+    padding: 21px 5px !important; }
+
+  .header .nav.navbar-nav.navbar-right {
+    width: 63.3%;
+    text-align: center; }
+
   .travel-plans .col-sm-4 {
     width: 30%; }
 
@@ -1875,6 +2007,30 @@ footer {
 
   /*product detail ends*/ }
 @media (max-width: 992px) {
+  /*navbar css starts*/
+  .header .navbar-header img {
+    width: 80px !important;
+    padding-top: 9px !important; }
+
+  .header .form-control {
+    width: 90px !important; }
+
+  .header ul li p {
+    font-size: 11px; }
+
+  .header ul li i img {
+    width: 20px !important; }
+
+  .header .nav > li > a {
+    padding: 5px 4px; }
+
+  .header .navbar-default .navbar-nav > li:last-child a {
+    padding: 21px 4px !important; }
+
+  .header .nav.navbar-nav.navbar-right {
+    width: 63%; }
+
+  /*navbar css ends*/
   h1.heading {
     font-size: 28px; }
 
@@ -1943,11 +2099,52 @@ footer {
 
   /*conversation page css ends*/ }
 @media (max-width: 767px) {
+  /*navbar css starts*/
+  .header .navbar-default .navbar-toggle {
+    border: 0;
+    padding-top: 12px; }
+
+  .header .navbar-brand {
+    float: left;
+    padding: 0 !important; }
+
+  .header .navbar-header {
+    width: 100% !important; }
+
+  .header .navbar-form {
+    display: none; }
+
+  .header .navbar-nav > li {
+    display: block;
+    text-align: left;
+    border: 0 !important; }
+
+  .header .nav.navbar-nav.navbar-right {
+    width: 100%; }
+
+  .header ul li i img {
+    display: none !important; }
+
+  .header ul li p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px !important; }
+
+  .header .navbar-default .navbar-nav > li:last-child a {
+    padding: 5px 4px !important;
+    margin-bottom: 10px; }
+
+  /*navbar css ends*/
   h1.heading {
     margin-bottom: 70px; }
 
   .box1 {
     margin-bottom: 20px; }
+
+  .slider_main.jumbotron {
+    height: 620px; }
 
   .recently-added .card {
     width: 44.74%;
@@ -2019,9 +2216,12 @@ footer {
   h1.heading::before {
     top: 50px; }
 
+  .slider_main.jumbotron {
+    height: 490px; }
+
   header .sign-up .form-group {
     display: block;
-    text-align: center; }
+    /*text-align: center;*/ }
 
   header #invite-friend .input-group-addon {
     display: inline-block;
@@ -2094,6 +2294,10 @@ footer {
     font-size: 22px;
     line-height: 33px; }
 
+  header .sign-up .form-group,
+  .wrapper .sign-up .form-group {
+    margin: 0 0px 30px; }
+
   .box1,
   .box2 {
     height: auto; }
@@ -2106,6 +2310,11 @@ footer {
 
   .box2 form input {
     width: auto; }
+
+  .jumbotron #typed {
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 47px; }
 
   .recently-added .card {
     width: 100%;
@@ -2211,7 +2420,10 @@ footer {
   .create-order .order-inner .nav-tabs li a {
     color: #EDEDED;
     white-space: nowrap;
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  .about div div {
+    padding: 50px 20px 40px; } }
 /*====== MEDIA QUERY ENDS ======*/
 /*====== HEADER CSS STARTS ======*/
 .navbar {
@@ -2302,16 +2514,6 @@ footer {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-.slider_main.jumbotron {
-  padding-top: 98px;
-  padding-bottom: 98px;
-  color: #484848; }
-
-.type,
-.map {
-  width: 100%;
-  float: left; }
-
 .slider_main.jumbotron .type h1 {
   font-weight: 100; }
 
@@ -2330,18 +2532,6 @@ footer {
   padding: 21px 10px; }
 
 /*====== HEADER CSS ENDS======*/
-/*====== BANNER CSS STARTS======*/
-.jumbotron {
-  background: url(../../images/slider.jpg);
-  background-size: cover;
-  color: #fff;
-  margin-bottom: 0px; }
-
-.jumbotron {
-  padding-top: 8em;
-  padding-bottom: 8em; }
-
-/*====== BANNER CSS ENDS======*/
 /****************Sunny Order detail Code************/
 .order_detail .order-inner {
   max-width: 900px;
@@ -2678,11 +2868,12 @@ footer {
   width: auto;
   float: left; }
 
-.two {
+.buttons.two {
   width: auto;
   float: right;
   margin-right: 30px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-color: transparent; }
 
 .two .btn:first-child {
   margin-right: 10px;

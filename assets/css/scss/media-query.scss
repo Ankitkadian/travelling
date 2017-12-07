@@ -1,6 +1,53 @@
 /*====== MEDIA QUERY STARTS ======*/
 
 @media(max-width:1199px) {
+    /*navbar css starts*/
+    .header .navbar-header {
+        width: 15%;
+        margin: auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .header .navbar > .container .navbar-brand,
+    .header .navbar > .container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+    .header .navbar-header img {
+        width: 100px !important;
+    }
+    .header .navbar-form {
+        padding: 0;
+    }
+    .header .navbar-brand {
+        padding: 5px 0 0 !important;
+        float: none;
+    }
+    .header .nav.navbar-nav {
+        width: 22%;
+        text-align: center;
+        margin: auto;
+    }
+    .header .form-control {
+        width: 157px !important;
+    }
+    .header .navbar-left {
+        float: none !important;
+    }
+    .header .navbar-nav > li {
+        float: none;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .header .nav > li > a {
+        padding: 5px 8px;
+    }
+    .header .navbar-default .navbar-nav > li:last-child a {
+        padding: 21px 5px !important;
+    }
+    .header .nav.navbar-nav.navbar-right {
+        width: 63.3%;
+        text-align: center;
+    }
     .travel-plans .col-sm-4 {
         width: 30%;
     }
@@ -19,6 +66,30 @@
 }
 
 @media(max-width:992px) {
+    /*navbar css starts*/
+    .header .navbar-header img {
+        width: 80px !important;
+        padding-top: 9px !important;
+    }
+    .header .form-control {
+        width: 90px !important;
+    }
+    .header ul li p {
+        font-size: 11px;
+    }
+    .header ul li i img {
+        width: 20px !important;
+    }
+    .header .nav > li > a {
+        padding: 5px 4px;
+    }
+    .header .navbar-default .navbar-nav > li:last-child a {
+        padding: 21px 4px !important;
+    }
+    .header .nav.navbar-nav.navbar-right {
+        width: 63%;
+    }
+    /*navbar css ends*/
     h1.heading {
         font-size: 28px;
     }
@@ -89,11 +160,52 @@
 }
 
 @media(max-width:767px) {
+    /*navbar css starts*/
+    .header .navbar-default .navbar-toggle {
+        border: 0;
+        padding-top: 12px;
+    }
+    .header .navbar-brand {
+        float: left;
+        padding: 0 !important;
+    }
+    .header .navbar-header {
+        width: 100% !important;
+    }
+    .header .navbar-form {
+        display: none;
+    }
+    .header .navbar-nav > li {
+        display: block;
+        text-align: left;
+        border: 0 !important;
+    }
+    .header .nav.navbar-nav.navbar-right {
+        width: 100%;
+    }
+    .header ul li i img {
+        display: none !important;
+    }
+    .header ul li p {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-top: 5px !important;
+    }
+    .header .navbar-default .navbar-nav > li:last-child a {
+        padding: 5px 4px !important;
+        margin-bottom: 10px;
+    }
+    /*navbar css ends*/
     h1.heading {
         margin-bottom: 70px;
     }
     .box1 {
         margin-bottom: 20px;
+    }
+    .slider_main.jumbotron {
+        height: 620px;
     }
     .recently-added .card {
         width: 44.74%;
@@ -167,9 +279,12 @@
     h1.heading::before {
         top: 50px;
     }
+    .slider_main.jumbotron {
+        height: 490px;
+    }
     header .sign-up .form-group {
         display: block;
-        text-align: center;
+        /*text-align: center;*/
     }
     header #invite-friend .input-group-addon {
         display: inline-block;
@@ -245,6 +360,10 @@
         font-size: 22px;
         line-height: 33px;
     }
+    header .sign-up .form-group,
+    .wrapper .sign-up .form-group {
+        margin: 0 0px 30px;
+    }
     .box1,
     .box2 {
         height: auto;
@@ -257,6 +376,11 @@
     }
     .box2 form input {
         width: auto;
+    }
+    .jumbotron #typed {
+        font-size: 33px;
+        font-weight: 300;
+        line-height: 47px;
     }
     .recently-added .card {
         width: 100%;
@@ -364,7 +488,9 @@
         white-space: nowrap;
         overflow: hidden;
     }
-
+    .about div div {
+        padding: 50px 20px 40px;
+    }
 }
 
 /*====== MEDIA QUERY ENDS ======*/

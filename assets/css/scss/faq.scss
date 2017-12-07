@@ -2,6 +2,11 @@
 
 .shop-trav {
     padding: 70px 0;
+    .faq-inner {
+        background-color: #fff;
+        padding: 30px 30px 20px;
+        border: 1px solid #eee;
+    }
     .btn-info {
         height: 50px;
         font-size: 18px;
@@ -11,7 +16,7 @@
         margin-bottom: 30px;
     }
     p.heading {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
         padding-bottom: 5px;
         font-family: $QS;
@@ -23,6 +28,9 @@
     }
     p {
         color: #888;
+        a {
+            color: $green;
+        }
     }
     p:last-child {
         margin-bottom: 20px;
@@ -44,6 +52,11 @@
     .ui-icon-circle-arrow-s::after {
         content: "\f107";
         right: 3px;
+    }
+    ul li {
+        line-height: 22px;
+        color: #888;
+        margin-bottom: 5px;
     }
 }
 

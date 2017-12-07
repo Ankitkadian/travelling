@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'default';
+@import 'banner';
 @import 'post-trip';
 @import 'create-order';
 @import 'invite';
@@ -16,7 +17,7 @@
 @import 'product-listing';
 @import 'order-detail';
 @import 'blog';
-@import 'support';
+@import 'contact';
 @import 'conversation';
 @import 'faq';
 @import 'about';
@@ -132,17 +133,6 @@
     padding-bottom: 6px;
 }
 
-.slider_main.jumbotron {
-    padding-top: 98px;
-    padding-bottom: 98px;
-    color: #484848;
-}
-
-.type,
-.map {
-    width: 100%;
-    float: left;
-}
 
 .slider_main.jumbotron .type h1 {
     font-weight: 100;
@@ -167,23 +157,6 @@
 }
 
 /*====== HEADER CSS ENDS======*/
-
-/*====== BANNER CSS STARTS======*/
-
-.jumbotron {
-    background: url(../../images/slider.jpg);
-    background-size: cover;
-    color: #fff;
-    margin-bottom: 0px;
-}
-
-.jumbotron {
-    padding-top: 8em;
-    padding-bottom: 8em;
-}
-
-
-/*====== BANNER CSS ENDS======*/
 
 /****************Sunny Order detail Code************/
 
@@ -574,11 +547,13 @@
     float: left;
 }
 
-.two {
+.buttons.two {
     width: auto;
     float: right;
     margin-right: 30px;
     margin-bottom: 20px;
+    background-color: transparent;
+
 }
 
 .two .btn:first-child {
